@@ -1,4 +1,7 @@
 <StackLayout>
-  <Label class="h1 title"
-    text="home Is working"></Label>
+    <Label text="Home Page" class="h1 title" textWrap="true"></Label>
+
+    <Label text="Go to TabView page.  On Tab 1, click on 'Go to another page'. Once you're on 'Another Page', click on 'Go Back to Tab View Child'.  You'll see an error and the navigation doesn't work anymore."
+        textWrap="true"></Label>
+    <Button text="Go to TabView" (tap)="goToTabView()"></Button>
 </StackLayout>

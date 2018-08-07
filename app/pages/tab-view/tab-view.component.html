@@ -1,0 +1,16 @@
+<ActionBar title="Tab View" icon="" class="action-bar">
+</ActionBar>
+<TabView selectedIndex="0">
+
+  <StackLayout *tabItem="{title: 'Tab 1'}" class="container">
+    <page-router-outlet name="newPage"></page-router-outlet>
+    <!-- <Label text="This is tab 1" textWrap="true"></Label>
+    <Button text="Go another page in tab 1" (tap)="goToAnotherPage()"></Button> -->
+
+  </StackLayout>
+
+  <StackLayout *tabItem="{title: 'Tab 2'}" class="container">
+    <Label text="This is tab 2" textWrap="true"></Label>
+  </StackLayout>
+
+</TabView>

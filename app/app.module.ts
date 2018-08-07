@@ -3,6 +3,9 @@ import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { AppRoutingModule } from "./app.routing";
 import { AppComponent } from "./app.component";
 import { HomeComponent } from "./pages/home/home.component";
+import { AnotherPageComponent } from "./pages/another-page/another-page.component";
+import { TabViewComponent } from "./pages/tab-view/tab-view.component";
+import { TabViewChildComponent } from "./pages/tab-view-child/tab-view-child.component";
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
@@ -19,7 +22,10 @@ import { HomeComponent } from "./pages/home/home.component";
     ],
     declarations: [
         AppComponent,
-        HomeComponent
+        HomeComponent,
+        AnotherPageComponent,
+        TabViewComponent,
+        TabViewChildComponent
     ],
     providers: [
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterExtensions } from 'nativescript-angular/router';
 
 @Component({
   moduleId: module.id,
@@ -8,8 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: RouterExtensions) { }
 
   ngOnInit() { }
+
+  goToTabView() {
+    this.router.navigateByUrl("tabview");
+  }
+
 
 }
